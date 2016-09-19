@@ -8,10 +8,6 @@ const appRoutes: Routes = [
     {
         path: 'home',
         component: HomeComponent
-    },
-    {
-        path: 'contact',
-        component: ContactComponent
     }
 ];
 

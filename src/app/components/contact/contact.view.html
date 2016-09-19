@@ -1,3 +1,20 @@
-<div>
-    Contact
+<div class="row">
+    <h2>Contact Form</h2>
+
+    <div *ngIf="invalid" class="alert alert-danger">
+        There are errors in the form. Try again
+    </div>
+
+    <form *ngIf="!submit" (ngSubmit)="onSubmit(contactForm.value, contactForm.valid)" novalidate [formGroup]="contactForm">
+        <label for="name">Your name</label>
+        <input class="u-full-width" type="text" placeholder="Enter your name" formControlName="name" name="name" id="name" required>
+        <label for="email">Your email</label>
+        <input class="u-full-width" type="email" placeholder="Enter your email" formControlName="email" name="email" id="email" required>
+        <input class="button-primary" type="submit" value="Submit">
+    </form>
+
+    <div *ngIf="submit">
+        <h4>Form inserted correctly. Shortly we will contact you</h4>
+    </div>
+
 </div>

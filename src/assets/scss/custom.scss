@@ -66,5 +66,24 @@ core-menu {
     }
 }
 
+.ng-invalid:not(form)  {
+    border: 1px solid #a94442; /* red */
+}
+
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+
+    &.alert-danger {
+        color: white;
+        border: 1px solid #D50000;
+        background: #E53935;
+    }
+}
+
+
+
 
 /*** /Remove for your project ***/
