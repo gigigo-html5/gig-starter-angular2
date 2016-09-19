@@ -1,12 +1,17 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from 'components';
+import { HomeComponent, ContactComponent } from 'components';
 
 const appRoutes: Routes = [
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     {
-        path: '',
+        path: 'home',
         component: HomeComponent
+    },
+    {
+        path: 'contact',
+        component: ContactComponent
     }
 ];
 

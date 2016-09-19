@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "gulp start-dev",
-    "postinstall": "typings install",
     "typings": "typings"
   },
   "repository": {
@@ -34,7 +33,8 @@
     "@angular/upgrade": "2.0.0",
     "bootstrap": "^3.3.6",
     "reflect-metadata": "^0.1.3",
-    "zone.js": "^0.6.23"
+    "zone.js": "^0.6.23",
+    "rxjs": "5.0.0-beta.12"
   },
   "devDependencies": {
     "babel-preset-angular2": "0.0.2",
